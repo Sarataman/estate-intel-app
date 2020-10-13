@@ -8,7 +8,7 @@
       </thead>
       <tbody>
         <tr v-for='result in results' :key='result.id'>
-          <td class="first-col fixed-col">{{ result.project_name }}</td>
+          <td class="first-col">{{ result.project_name }}</td>
         </tr>
       </tbody>
     </table>
@@ -78,7 +78,12 @@ table {
 }
 
 .main-table {
+  float: left;
   box-shadow: -5px 5px 10px #3738381a, 5px 5px 10px #3738381a;
+}
+
+tr:nth-child(even) {
+  background: #ffffff;
 }
 
 th,td {
@@ -87,28 +92,15 @@ th,td {
   text-align: left;
 }
 
-.first-col {
-  border-radius: 5px 0 0 0 ;
-  font-weight: bold;
-}
-
-.last-col {
-  border-radius: 0 5px 0 0;
-  box-shadow: 5px 5px 10px #3738381a;
-}
-
-tr:nth-child(even) {
-  background: #ffffff;
-}
-
 th {
   background: #27394b;
   color: #ffffff;
   font-weight: 600;
 }
 
-.main-table {
-  float: left;
+.first-col {
+  border-radius: 5px 0 0 0 ;
+  font-weight: bold;
 }
 
 .sec-table {
@@ -116,6 +108,12 @@ th {
   box-shadow: -2px 3px 10px #3738381a;
 }
 
+.last-col {
+  border-radius: 0 5px 0 0;
+  box-shadow: 5px 5px 10px #3738381a;
+}
+
+/*Style for scrollable project name column in mobile version */
 /* .hidden-col {
   display: none;
 } */
@@ -128,13 +126,6 @@ th {
 
 @media (max-width: 50em) {
 
-  /* .hidden-col {
-    display: block;
-    font-weight: bold;
-    box-shadow: 5px 5px 8px #7375791a;
-    border-radius: 5px 0 0 0;
-  } */
-
   .table-border {
     font-size: 12px;
   }
@@ -142,6 +133,13 @@ th {
   .sec-table {
     border-radius: 0 5px 0 0;
   }
+
+  /* .hidden-col {
+    display: block;
+    font-weight: bold;
+    box-shadow: 5px 5px 8px #7375791a;
+    border-radius: 5px 0 0 0;
+  } */
 }
 
 .status{
