@@ -2,7 +2,7 @@
   <div id="app">
     <div class="flex-item">
       <h2>Ongoing Projects</h2>
-      <input type="text" placeholder="Search history">
+      <input type="text" placeholder="Search history    🔍">
     </div>
     <br>
     <br>
@@ -46,5 +46,9 @@ input {
   margin-top: 2vh;
   height: 5vh;
   text-align: center;
+}
+
+input:active {
+  height: 5vh;
 }
 </style>

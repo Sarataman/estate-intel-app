@@ -22,7 +22,9 @@
             <th>Main Contractor</th>
             <th>Area</th>
             <th>State</th>
-            <th>Status</th>
+            <th class="arrow-down">Status
+              <div>  <i class="fas fa-sort-down"></i></div>
+            </th>
             <th class="last-col">Sector</th>
           </tr>
         </thead>
@@ -87,7 +89,7 @@ tr:nth-child(even) {
 }
 
 th,td {
-  padding: 25px 15px;
+  padding: 25px 12px;
   white-space: nowrap;
   text-align: left;
 }
@@ -108,6 +110,11 @@ th {
   box-shadow: -2px 3px 10px #3738381a;
 }
 
+.arrow-down {
+	display: flex;
+	justify-content: space-between;
+}
+
 .last-col {
   border-radius: 0 5px 0 0;
   box-shadow: 5px 5px 10px #3738381a;
@@ -125,7 +132,6 @@ th {
 }
 
 @media (max-width: 50em) {
-
   .table-border {
     font-size: 12px;
   }
@@ -142,14 +148,10 @@ th {
   } */
 }
 
-.status{
-  padding: 20px 10px;
-}
-
 .status-bg {
   background: rgb(255, 222, 179);
   color: #967a46;
-  padding: 5px;
+  padding: 0 10px;
   border-radius: 2px;
 }
 
