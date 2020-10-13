@@ -1,1 +1,0 @@
-# estate-intel-app
